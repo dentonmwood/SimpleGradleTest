@@ -11,4 +11,5 @@ plugins {
 }
 
 rootProject.name = "SimpleGradleTest"
-include("app")
+include("bad-test-code")
+include("better-test-code")
