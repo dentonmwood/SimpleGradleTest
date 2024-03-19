@@ -16,4 +16,9 @@ class CatanResourceCalculatorTest {
         when(catanResourceRepository.loadPlayers()).thenReturn(expectedList);
         assertEquals(expectedList, CatanResourceCalculator.initializePlayers(catanResourceRepository));
     }
+
+    @Test void testEmptyHand() {
+        Player player = new Player("Kevin", new HashMap<>());
+        assertFalse(CatanResourceCalculator.hasEnoughResourcesForSettlement(player));
+    }
 }
