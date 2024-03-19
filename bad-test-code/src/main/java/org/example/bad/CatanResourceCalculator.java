@@ -7,7 +7,6 @@ import java.util.Map;
 
 public class CatanResourceCalculator {
 
-    // Intentionally large and complex function
     public static void calculateAllSettlementTrades() {
         // Assume we have a list of players and their resources
         List<Player> players = initializePlayers();
